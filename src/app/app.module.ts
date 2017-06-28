@@ -6,11 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {StoreModule} from '@ngrx/store';
 import { MainThreadComponent } from './main-thread/main-thread.component';
+import {DbService} from './shared/db.service';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainThreadComponent
+    MainThreadComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,7 @@ import { MainThreadComponent } from './main-thread/main-thread.component';
     HttpModule,
     StoreModule.provideStore({})
   ],
-  providers: [],
+  providers: [DbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
