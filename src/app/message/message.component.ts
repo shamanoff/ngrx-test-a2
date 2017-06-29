@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Message} from '../shared/message';
+import {Message} from '../messages/message';
 
 @Component({
-  selector: 'app-message',
+  selector: 'message',
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.scss']
 })

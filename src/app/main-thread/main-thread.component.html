@@ -1,3 +1,6 @@
-<p>
-  main-thread works!
-</p>
+
+<ul class="message-list" #list>
+  <li class="message-list-item" *ngFor="let message of message$">
+    <message [message]="message"></message>
+  </li>
+</ul>
