@@ -8,6 +8,8 @@ import {StoreModule} from '@ngrx/store';
 import { MainThreadComponent } from './main-thread/main-thread.component';
 import {DbService} from './shared/db.service';
 import { MessageComponent } from './message/message.component';
+import {reducer} from './reducer';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MessageComponent } from './message/message.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    StoreModule.provideStore({})
+    StoreModule.provideStore(reducer),
+    StoreDevtoolsModule.instrumentOnlyWithExtension()
+
   ],
   providers: [DbService],
   bootstrap: [AppComponent]

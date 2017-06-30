@@ -1,11 +1,13 @@
-import {AllMessages, INITIAL_ALLMESSAGES_STATE} from "../messages/all-messages";
+// import {StoreData, INITIAL_STOREDATA_STATE} from './store-data';
+import {Message} from '../model/message';
 
 
 export interface ApplicationState {
 
-  allMessages: AllMessages;
+  messages: Message[];
 }
 
 export const INITIAL_APP_STATE: ApplicationState = {
-  allMessages: INITIAL_ALLMESSAGES_STATE
+  messages: []
+  // storeData: INITIAL_STOREDATA_STATE
 };
