@@ -1,13 +1,12 @@
-// import {StoreData, INITIAL_STOREDATA_STATE} from './store-data';
-import {Message} from '../model/message';
+import {StoreData, INITIAL_STOREDATA_STATE} from './store-data';
 
 
 export interface ApplicationState {
 
-  messages: Message[];
+  storeData: StoreData;
 }
 
 export const INITIAL_APP_STATE: ApplicationState = {
-  messages: []
-  // storeData: INITIAL_STOREDATA_STATE
+
+  storeData: INITIAL_STOREDATA_STATE
 };

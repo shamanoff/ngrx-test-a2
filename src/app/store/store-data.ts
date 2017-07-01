@@ -1,4 +1,3 @@
-/*
 
 import {Message} from '../model/message';
 
@@ -10,4 +9,3 @@ export interface StoreData {
 export const INITIAL_STOREDATA_STATE: StoreData = {
   messages: []
 };
-*/
